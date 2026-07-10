@@ -19,8 +19,8 @@ export function createMetadata({
   const url = `${siteConfig.url}${path}`;
   const fullTitle =
     title === siteConfig.brand
-      ? `CapCut Pro Mod APK ${siteConfig.versionLabel} — Features, No Watermark & Official Alternatives`
-      : `${title} | CapCut Pro Mod APK`;
+      ? "CapCut Pro APK Guide (2026): Features, Safe Install & Mod Risks"
+      : `${title} | CapCut Pro Guide`;
 
   return {
     title: fullTitle,
