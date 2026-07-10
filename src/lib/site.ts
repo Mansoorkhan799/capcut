@@ -1,18 +1,21 @@
 export const siteConfig = {
-  name: "CapCut Pro Guide",
+  name: "CapCut Pro Mod APK",
   brand: "CapCut Pro",
   domain: "capcutpromodapk.org",
   url: "https://capcutpromodapk.org",
   description:
-    "CapCut Pro APK guide: official features, no-watermark Pro exports, AI tools, safe Android install steps, and why CapCut mod APKs are unsafe. Updated July 2026.",
-  officialDownload: "https://www.capcut.com/",
+    "CapCut Pro Mod APK v18.5.0 explained: premium unlock claims, no-watermark features, AI tools, Free vs Pro vs mod differences, security risks, and official CapCut alternatives. Updated July 2026.",
+  officialWebsite: "https://www.capcut.com/",
+  officialDownload:
+    "https://dl.capcutpromodapk.org/file/capcut-pro/capcut-pro-v18.5.0-mod.apk",
   playStore:
     "https://play.google.com/store/apps/details?id=com.lemon.lvoverseas",
   email: "hello@capcutpromodapk.org",
-  updated: "July 10, 2026",
+  updated: "July 11, 2026",
+  versionLabel: "v18.5.0",
   author: {
-    name: "CapCut Pro Guide Editorial",
-    role: "Independent software safety & creator tools research",
+    name: "CapCut Pro Mod APK Editorial",
+    role: "Independent CapCut Pro Mod APK research & creator safety guides",
   },
 };
 

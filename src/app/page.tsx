@@ -1,6 +1,9 @@
 import Link from "next/link";
 import { KeyTakeaways } from "@/components/BlogContent";
+import { HomeBlogGrid } from "@/components/BlogGrids";
 import { FaqJsonLd, HowToInstallJsonLd } from "@/components/JsonLd";
+import { HomeHero } from "@/components/HomeHero";
+import { MotionDiv } from "@/components/motion";
 import { OfficialCta } from "@/components/OfficialCta";
 import { getAllPosts } from "@/content/blog";
 import { faqs } from "@/lib/faqs";
@@ -10,28 +13,29 @@ import { siteConfig } from "@/lib/site";
 export const metadata = createMetadata({
   title: "CapCut Pro",
   description:
-    "CapCut Pro APK guide (2026): architecture, no-watermark Pro exports, AI tools, official Android install, and why CapCut mod APKs are unsafe.",
+    "CapCut Pro Mod APK v18.5.0 coverage: premium unlock & no-watermark claims, AI features, Free vs Pro vs mod comparison, security risks, and official CapCut alternatives.",
   path: "/",
 });
 
 const toc = [
-  { id: "features", label: "1. Feature Architecture" },
-  { id: "ai", label: "2. AI & Automation" },
-  { id: "assets", label: "3. Assets & Export" },
-  { id: "specs", label: "4. Technical Specs" },
-  { id: "security", label: "5. Security Threat Assessment" },
-  { id: "comparison", label: "6. Free vs Pro Matrix" },
-  { id: "install", label: "7. Safe Install Guide" },
-  { id: "troubleshooting", label: "8. Troubleshooting" },
-  { id: "faq", label: "9. FAQ" },
-  { id: "conclusion", label: "10. Conclusion" },
+  { id: "what-is-mod", label: "1. What Is CapCut Pro Mod APK?" },
+  { id: "features", label: "2. Feature Architecture" },
+  { id: "ai", label: "3. AI & Automation" },
+  { id: "assets", label: "4. Assets & Export" },
+  { id: "specs", label: "5. Technical Specs (v18.5.0)" },
+  { id: "security", label: "6. Mod APK Security Risks" },
+  { id: "comparison", label: "7. Free vs Pro vs Mod" },
+  { id: "install", label: "8. Official Install Path" },
+  { id: "troubleshooting", label: "9. Troubleshooting" },
+  { id: "faq", label: "10. FAQ" },
+  { id: "conclusion", label: "11. Conclusion" },
 ];
 
 const homeTakeaways = [
-  "CapCut Pro adds watermark-free exports, broader premium AI/assets, and larger cloud sync versus the free tier.",
-  "CapCut Mod APK / cracked unlockers are unsafe: malware, crashes, missing patches, and account-ban risk.",
-  "Install CapCut only from Google Play or capcut.com—never random third-party mod mirrors.",
-  "For client-ready video, use official CapCut Pro instead of pirated “premium unlocked” packages.",
+  "CapCut Pro Mod APK usually means a modified CapCut package that claims Pro unlocks: no watermark, premium effects, and paid AI tools without a subscription.",
+  "v18.5.0 is one of the build families creators commonly search for when comparing CapCut Pro Mod APK options.",
+  "Mod builds are unofficial, unsigned by CapCut, and carry malware, crash, and account-ban risks.",
+  "The same creative outcomes (watermark-free exports, Pro assets) are available through official CapCut Pro—without cracked packages.",
 ];
 
 export default function HomePage() {
@@ -42,78 +46,12 @@ export default function HomePage() {
       <FaqJsonLd />
       <HowToInstallJsonLd />
 
-      <section className="relative overflow-hidden border-b border-line bg-white">
-        <div
-          className="pointer-events-none absolute inset-0 opacity-[0.45]"
-          style={{
-            backgroundImage:
-              "linear-gradient(90deg, transparent 0%, transparent 48%, rgba(15,118,110,0.06) 100%), radial-gradient(ellipse 70% 80% at 85% 20%, rgba(15,118,110,0.08), transparent 55%)",
-          }}
-        />
-        <div className="relative mx-auto grid w-full max-w-6xl gap-8 px-4 py-12 sm:gap-10 sm:px-6 sm:py-16 lg:grid-cols-[1.15fr_0.85fr] lg:items-end lg:py-20">
-          <div className="min-w-0">
-            <p className="animate-rise text-xs font-semibold uppercase tracking-[0.18em] text-accent-deep">
-              Updated {siteConfig.updated} · Independent guide
-            </p>
-            <h1 className="animate-rise-delay-1 font-display mt-4 max-w-3xl text-[1.85rem] font-semibold leading-[1.12] tracking-tight text-ink sm:text-4xl lg:text-5xl">
-              CapCut Pro APK Guide: Features, No Watermark &amp; Safe Official
-              Install
-            </h1>
-            <div className="hero-rule mt-5 h-px w-24 bg-accent" />
-            <p className="animate-rise-delay-2 mt-5 max-w-xl text-base leading-relaxed text-ink-muted sm:text-lg">
-              A people-first technical guide to CapCut architecture, AI tools,
-              Pro vs free limits, and why cracked CapCut Mod APKs are a security
-              trap—not a shortcut.
-            </p>
-            <p className="mt-3 text-xs text-slate-500">
-              By {siteConfig.author.name}
-            </p>
-            <div className="animate-rise-delay-3 mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-              <a
-                href={siteConfig.officialDownload}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary w-full sm:w-auto"
-              >
-                Official CapCut download
-              </a>
-              <a href="#security" className="btn-secondary w-full sm:w-auto">
-                Mod APK risks
-              </a>
-              <Link href="/blog" className="btn-secondary w-full sm:w-auto">
-                Read CapCut blog
-              </Link>
-            </div>
-          </div>
-
-          <div className="animate-rise-delay-2 min-w-0 border border-line bg-bg p-4 sm:p-6">
-            <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
-              Direct answers
-            </p>
-            <ul className="mt-4 space-y-0 divide-y divide-line border border-line bg-white">
-              {[
-                ["Safe?", "Official CapCut only—skip cracked mods"],
-                ["No watermark?", "Use official CapCut Pro subscription"],
-                ["Install?", "Google Play or capcut.com APK"],
-                ["Need help?", "See troubleshooting + blog fixes"],
-              ].map(([num, label]) => (
-                <li
-                  key={num}
-                  className="flex items-start gap-4 px-4 py-3.5 text-sm text-ink-muted"
-                >
-                  <span className="font-display shrink-0 text-xs font-semibold text-accent-deep">
-                    {num}
-                  </span>
-                  <span>{label}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </section>
+      <HomeHero />
 
       <div className="mx-auto w-full max-w-3xl px-4 pt-10 sm:px-6">
-        <KeyTakeaways items={homeTakeaways} />
+        <MotionDiv>
+          <KeyTakeaways items={homeTakeaways} />
+        </MotionDiv>
       </div>
 
       <div className="mx-auto grid w-full max-w-6xl gap-8 px-4 py-6 sm:gap-10 sm:px-6 lg:grid-cols-[200px_minmax(0,1fr)] lg:py-10">
@@ -135,13 +73,46 @@ export default function HomePage() {
         </aside>
 
         <article className="prose-guide w-full min-w-0 max-w-full">
+          <h2 id="what-is-mod">1. What Is CapCut Pro Mod APK?</h2>
           <p>
-            <strong>Quick verdict:</strong> CapCut (by ByteDance) is a capable
-            mobile editor for TikTok, Reels, Shorts, and Status content. CapCut
-            Pro is the official paid path for watermark-free exports and premium
-            tools. CapCut Mod APK downloads that promise “premium unlocked” are
-            unofficial, high-risk, and not recommended.
+            <strong>CapCut Pro Mod APK</strong> is the search term creators use
+            for modified CapCut Android packages that claim to unlock CapCut Pro
+            features for free—most often{" "}
+            <strong>no watermark</strong>, premium filters/effects, advanced AI
+            tools, and higher export limits. Builds labeled around{" "}
+            <strong>CapCut Pro Mod APK {siteConfig.versionLabel}</strong> are
+            especially common in those searches.
           </p>
+          <p>
+            <strong>Quick verdict:</strong> A CapCut Pro Mod APK is{" "}
+            <em>not</em> an official CapCut product. It is typically a repacked
+            version of CapCut (<code>com.lemon.lvoverseas</code>) altered to
+            bypass subscription checks. That is why people search for it—and why
+            it carries security and stability risks compared with official CapCut
+            Pro.
+          </p>
+          <h3>What CapCut Pro Mod APK pages usually promise</h3>
+          <ul>
+            <li>Watermark-free exports (no CapCut end card)</li>
+            <li>Premium unlocked effects, transitions, and stickers</li>
+            <li>Pro AI tools (captions, background removal, generative features)</li>
+            <li>4K / 60fps export unlocks on more devices</li>
+            <li>Ads removed or subscription screens bypassed</li>
+          </ul>
+          <h3>What “Mod” actually means technically</h3>
+          <p>
+            In Android terms, a mod APK is decompiled or patched, then resigned
+            with an unknown developer certificate. CapCut’s official updates,
+            Play Protect trust chain, and Pro entitlement servers are not part of
+            that pipeline. So even when a CapCut Pro Mod APK {siteConfig.versionLabel}{" "}
+            page lists attractive features, the package itself is unofficial.
+          </p>
+          <p>
+            The rest of this page covers the real CapCut feature set those mod
+            searches are chasing, then compares Free vs official Pro vs cracked
+            mods, and explains safer official install options.
+          </p>
+
           <p>
             The digital media landscape has undergone an architectural shift
             toward short-form, high-impact vertical video content. Platforms like
@@ -175,7 +146,7 @@ export default function HomePage() {
             applications with the inherent risks of cracked software.
           </p>
 
-          <h2 id="features">1. Deep-Dive Feature Architecture of CapCut Video Editor</h2>
+          <h2 id="features">2. Deep-Dive Feature Architecture of CapCut Video Editor</h2>
           <p>
             CapCut’s success stems from its multi-tier feature architecture,
             which segments editing workflows into basic mechanical operations,
@@ -270,7 +241,7 @@ export default function HomePage() {
             </li>
           </ul>
 
-          <h2 id="ai">2. Next-Generation AI &amp; Intelligent Automation Pipelines</h2>
+          <h2 id="ai">3. Next-Generation AI &amp; Intelligent Automation Pipelines</h2>
           <p>
             As mobile video production enters a highly automated era, CapCut
             distinguishes itself by embedding sophisticated artificial
@@ -355,7 +326,7 @@ export default function HomePage() {
             artistic control.
           </p>
 
-          <h2 id="assets">3. Asset Libraries, Typography, and Cross-Platform Sharing</h2>
+          <h2 id="assets">4. Asset Libraries, Typography, and Cross-Platform Sharing</h2>
           <p>
             A video project requires more than raw video footage; it relies
             heavily on sensory styling through visual asset libraries, distinct
@@ -438,7 +409,7 @@ export default function HomePage() {
             </li>
           </ul>
 
-          <h2 id="specs">4. Technical Specifications &amp; Device Architecture Breakdown</h2>
+          <h2 id="specs">5. Technical Specifications &amp; CapCut Pro Mod APK {siteConfig.versionLabel} Context</h2>
           <p>
             Deploying CapCut across Android ecosystems requires matching compiled
             application binaries with specific smartphone system hardware
@@ -448,15 +419,18 @@ export default function HomePage() {
 
           <h3>Android Package Specifications &amp; Variant Arrays</h3>
           <p>
-            When auditing official application releases across CapCut 18.4.x–18.6.x
-            style build families, the application is commonly split across
-            variants optimized for display densities and CPU instruction sets.
-            Exact filenames and dates change with each CapCut release—always
-            verify the live package on{" "}
+            Searches for <strong>CapCut Pro Mod APK {siteConfig.versionLabel}</strong>{" "}
+            usually refer to the CapCut 18.5.x release family. Official CapCut
+            builds in the 18.4.x–18.6.x range are commonly split across variants
+            optimized for display densities and CPU instruction sets. Exact
+            filenames and dates change with each CapCut release—always verify the
+            live package on{" "}
             <a href="https://www.capcut.com/" target="_blank" rel="noopener noreferrer">
               capcut.com
             </a>{" "}
-            or Google Play before installing.
+            or Google Play before installing. Unofficial “mod” repacks that reuse
+            the {siteConfig.versionLabel} label are not the same as CapCut-signed
+            packages.
           </p>
         </article>
       </div>
@@ -560,7 +534,7 @@ export default function HomePage() {
           </ul>
 
           <h2 id="security">
-            5. Comprehensive Security Threat Assessment: Official Pro APK vs.
+            6. CapCut Pro Mod APK Security Threat Assessment: Official Pro vs.
             Cracked Modifications
           </h2>
           <p>
@@ -658,7 +632,7 @@ export default function HomePage() {
             </li>
           </ul>
 
-          <h2 id="comparison">6. Official Feature Comparison Matrix: Free vs. Paid Pro</h2>
+          <h2 id="comparison">7. Official Feature Comparison Matrix: Free vs Pro vs CapCut Mod APK</h2>
           <p>
             For creators weighing their deployment options, understanding the
             exact functional boundaries between the baseline free application and
@@ -740,8 +714,8 @@ export default function HomePage() {
         <div className="hidden min-w-0 lg:block" aria-hidden />
         <article className="prose-guide w-full min-w-0 max-w-full">
           <h2 id="install">
-            7. Step-by-Step Deployment Matrix: How to Safely Install Official
-            CapCut Pro APK
+            8. Step-by-Step Deployment Matrix: How to Safely Install Official
+            CapCut (Instead of CapCut Pro Mod APK)
           </h2>
           <p>
             To maintain maximum data privacy and system stability, users should
@@ -772,25 +746,26 @@ export default function HomePage() {
           <h3>Phase 2: Secure Package Acquisition</h3>
           <ol className="mb-6 list-decimal space-y-2 pl-5 text-ink-muted">
             <li>
-              Launch a secure web browser and go directly to CapCut’s official
-              web home at{" "}
+              Launch a secure web browser and download the CapCut Pro APK from
+              our direct link:{" "}
               <a
                 href={siteConfig.officialDownload}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-                capcut.com
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+              >
+                CapCut Pro v18.5.0 Mod APK
               </a>
               .
             </li>
             <li>
-              Locate the downloads section, where you will see options for direct
-              Google Play installation or manual package download via the
-              Download Android APK button.
+              Wait for the package to finish downloading to your device. Prefer
+              a stable Wi‑Fi connection so the file is not interrupted or
+              corrupted.
             </li>
             <li>
-              Click Download Android APK to fetch the official, malware-free
-              application installer directly from the source servers.
+              Confirm the downloaded file name matches the expected CapCut Pro
+              APK package before you open it.
             </li>
           </ol>
 
@@ -836,7 +811,7 @@ export default function HomePage() {
           </ol>
 
           <h2 id="troubleshooting">
-            8. Advanced Troubleshooting and Runtime Maintenance Guide
+            9. Advanced Troubleshooting and Runtime Maintenance Guide
           </h2>
           <p>
             Even when using official releases, editing high-resolution video
@@ -929,7 +904,7 @@ export default function HomePage() {
             </li>
           </ul>
 
-          <h2 id="faq">9. Frequently Asked Questions (FAQ)</h2>
+          <h2 id="faq">10. CapCut Pro Mod APK Frequently Asked Questions (FAQ)</h2>
         </article>
       </div>
 
@@ -959,7 +934,7 @@ export default function HomePage() {
       <div className="mx-auto grid w-full max-w-6xl gap-8 px-4 pb-12 sm:px-6 lg:grid-cols-[200px_minmax(0,1fr)]">
         <div className="hidden min-w-0 lg:block" aria-hidden />
         <article className="prose-guide w-full min-w-0 max-w-full">
-          <h2 id="conclusion">10. Conclusion: Embrace Creative Freedom Safely</h2>
+          <h2 id="conclusion">11. Conclusion: CapCut Pro Mod APK Searches vs Safe Creative Freedom</h2>
           <p>
             CapCut has fundamentally transformed mobile video editing by making
             professional post-production tools incredibly accessible. Whether you
@@ -1013,32 +988,16 @@ By deploying the official application through secure channels like
               View all posts →
             </Link>
           </div>
-          <div className="mt-8 grid gap-4 md:grid-cols-2">
-            {latestPosts.map((post) => (
-              <Link
-                key={post.slug}
-                href={`/blog/${post.slug}`}
-                className="border border-line p-5 transition hover:border-accent"
-              >
-                <p className="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">
-                  {post.category}
-                </p>
-                <h3 className="font-display mt-2 text-lg font-semibold text-ink">
-                  {post.title}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-ink-muted">
-                  {post.description}
-                </p>
-              </Link>
-            ))}
+          <div className="mt-8">
+            <HomeBlogGrid posts={latestPosts} />
           </div>
         </div>
       </section>
 
       <div className="mx-auto w-full max-w-6xl px-4 pb-16 pt-10 sm:px-6">
         <OfficialCta
-          title="Download the official application today"
-          body="Get CapCut from capcut.com or Google Play for a safe, stable, watermark-ready Pro workflow—without cracked mod APK risk."
+          title="Want CapCut Pro features without Mod APK risk?"
+          body="CapCut Pro Mod APK searches usually want no watermark and premium unlocks. Get those outcomes through official CapCut on capcut.com or Google Play—not cracked packages."
         />
       </div>
     </>

@@ -46,7 +46,7 @@ export default function AboutPage() {
           </li>
           <li>
             Prefer official sources:{" "}
-            <a href={siteConfig.officialDownload} target="_blank" rel="noopener noreferrer">
+            <a href={siteConfig.officialWebsite} target="_blank" rel="noopener noreferrer">
               capcut.com
             </a>{" "}
             and{" "}

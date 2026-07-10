@@ -1,37 +1,52 @@
 export const faqs = [
   {
-    question: "What is CapCut Pro APK, and how does it differ from the regular version?",
+    question: "What is CapCut Pro Mod APK?",
     answer:
-      "CapCut Pro APK is the premium subscription tier of the mobile video editing application. While the free version offers comprehensive basic editing tools, it applies an animated branding watermark at the end of exported videos and locks advanced tools behind a paywall. Upgrading to the official Pro version removes all watermarks, unlocks ultra-high-definition 4K 60fps rendering, gives you up to 10GB of secure cloud storage, and opens up the complete catalog of advanced AI tools and premium effects.",
+      "CapCut Pro Mod APK usually refers to a modified CapCut Android package that claims to unlock Pro features—such as no watermark, premium effects, and paid AI tools—without an official subscription. These builds are unofficial and not published by CapCut or ByteDance.",
   },
   {
-    question: "Is it safe to download and use a cracked or modded version of CapCut Pro?",
+    question: "What is CapCut Pro Mod APK v18.5.0?",
     answer:
-      "No, using cracked or modded versions of CapCut Pro from third-party websites carries significant security risks. These unauthorized packages are frequently bundled with dangerous malware, spyware tracking loops, or malicious adware networks that can compromise your personal data privacy and infect your phone. Additionally, modded apps suffer from frequent crashes, lack access to official security updates, and can lead to permanent bans on your linked social media profiles.",
+      "v18.5.0 is a CapCut version family commonly mentioned in CapCut Pro Mod APK searches. Official CapCut 18.5.x builds come from Google Play or capcut.com. Unofficial mod repacks that reuse the v18.5.0 label are resigned by unknown publishers and are not the same as CapCut-signed apps.",
+  },
+  {
+    question: "What is CapCut Pro APK, and how does it differ from the regular version?",
+    answer:
+      "CapCut Pro is the premium subscription tier of CapCut. The free version offers strong basic editing tools but applies branding limits and locks advanced tools. Official Pro removes watermarks, unlocks higher-end export options such as 4K 60fps where supported, expands cloud storage, and opens premium AI/effects catalogs.",
+  },
+  {
+    question: "Is CapCut Pro Mod APK safe?",
+    answer:
+      "No. CapCut Pro Mod APK / cracked unlockers from third-party sites are unverified and are frequently bundled with malware, spyware, or aggressive adware. They also crash more often, miss security updates, and can lead to account bans on linked social profiles.",
+  },
+  {
+    question: "Can I get no-watermark CapCut exports without a Mod APK?",
+    answer:
+      "Yes. Official CapCut Pro is designed for watermark-free production exports compared with free-tier branding limits. That is the supported way to get the result CapCut Pro Mod APK pages usually advertise.",
   },
   {
     question: "Can I safely download CapCut outside of the Google Play Store?",
     answer:
-      "Yes, you can safely download the official application installer file directly from CapCut's official website (capcut.com). This official APK file is completely safe, regularly audited for security vulnerabilities, and matches the version distributed through mainstream app stores, making it ideal for devices that lack access to the Google Play Store.",
+      "Yes, from CapCut’s official website (capcut.com). That official APK is audited and matches store builds. Third-party CapCut Pro Mod APK mirrors are a different, higher-risk category.",
   },
   {
     question: 'Why does my phone display a "Parsing Error" when I try to install the APK?',
     answer:
-      "A parsing error usually points to an incomplete or corrupted download, which often occurs if your internet connection drops during the download process. It can also mean the app's version requirements don't match your phone's hardware—such as trying to install a modern 64-bit application on an older smartphone running an outdated version of Android.",
+      "A parsing error usually means the download was incomplete or corrupted, or the package does not match your device architecture or Android version—for example installing a modern 64-bit build on unsupported older hardware.",
   },
   {
     question: "Do I need to root my Android phone to use manual APK installers?",
     answer:
-      "No, rooting your smartphone is completely unnecessary. CapCut APK installers deploy normally on standard, unmodified Android operating systems. All that's required is toggling on the \"Install Unknown Apps\" permission for your file manager or web browser within your device's security settings.",
+      "No. Rooting is unnecessary. CapCut installs on standard Android. You only need to allow Install unknown apps for your browser or file manager.",
   },
   {
     question: 'How can I fix the "No Internet Connection" error in CapCut?',
     answer:
-      "You can resolve this error by closing the application entirely, removing it from your phone's recent apps tray, and reopening it. If the issue persists, go into CapCut's internal settings and enable Business Creator Mode, or connect to a high-speed VPN service before opening the app to ensure your device can establish a stable connection with CapCut's asset servers.",
+      "Force-close CapCut and reopen it. If it continues, enable Business Creator Mode in settings, or connect through a reliable VPN if ByteDance servers are restricted on your network. Cracked CapCut Pro Mod APK builds often make this error worse because API checks fail.",
   },
   {
     question: "What is the 15-minute video limitation inside the application?",
     answer:
-      "While CapCut is an exceptional tool for creating short-form social content, the free version cap places a maximum limit of 15 minutes on any single edited video project timeline, and limits free cloud uploads to a maximum of 1GB. For creators looking to produce long-form content, upgrading to the official Pro tier or migrating projects to desktop environments removes these timeline restrictions.",
+      "The free tier commonly limits a single project timeline to about 15 minutes and restricts free cloud uploads (often around 1GB). Official Pro or desktop CapCut workflows remove many of these limits for longer projects. Mod APKs that claim to remove every limit are still unofficial and unstable.",
   },
 ];

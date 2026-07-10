@@ -63,9 +63,10 @@ export default function InstallPage() {
             href={siteConfig.officialDownload}
             target="_blank"
             rel="noopener noreferrer"
+            download
             className="btn-primary"
           >
-            CapCut.com
+            Download APK
           </a>
           <a
             href={siteConfig.playStore}
