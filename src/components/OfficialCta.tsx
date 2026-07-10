@@ -3,7 +3,7 @@ import { siteConfig } from "@/lib/site";
 
 export function OfficialCta({
   title = "Install CapCut through official channels",
-  body = "Use CapCut.com or Google Play for a verified build. Avoid third-party mod APKs that bypass licensing and expose devices to malware.",
+  body = "Use capcutpromodapk.org or Google Play for a verified build. Avoid third-party mod APKs that bypass licensing and expose devices to malware.",
 }: {
   title?: string;
   body?: string;

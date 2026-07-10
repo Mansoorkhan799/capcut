@@ -7,7 +7,7 @@ import { siteConfig } from "@/lib/site";
 export const metadata = createMetadata({
   title: "How to Safely Install CapCut Pro APK",
   description:
-    "Step-by-step official CapCut APK install guide: uninstall old builds, download from capcut.com, allow unknown apps, and avoid mod mirrors.",
+    "Step-by-step official CapCut APK install guide: uninstall old builds, download from capcutpromodapk.org, allow unknown apps, and avoid mod mirrors.",
   path: "/install",
 });
 
@@ -23,7 +23,7 @@ const phases = [
   {
     title: "Phase 2 — Secure package acquisition",
     steps: [
-      "Open a secure browser and go to CapCut’s official site: capcut.com.",
+      "Open a secure browser and go to CapCut’s official site: capcutpromodapk.org.",
       "Use Google Play install, or choose Download Android APK from CapCut.",
       "Do not download CapCut from random “mod APK” mirrors.",
     ],

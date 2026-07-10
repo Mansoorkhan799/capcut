@@ -21,17 +21,19 @@ const body = IBM_Plex_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "CapCut Pro APK Guide | Features, AI Tools & Safe Official Install",
+    default: "CapCut Pro Mod APK v18.5.0 Free Download Official",
     template: `%s | ${siteConfig.domain}`,
   },
   description: siteConfig.description,
   keywords: [
+    "CapCut Pro Mod APK",
+    "CapCut Pro Mod APK v18.5.0",
     "CapCut Pro APK",
-    "CapCut Pro features",
+    "CapCut Pro free download",
     "CapCut no watermark",
     "CapCut AI tools",
     "CapCut official download",
-    "CapCut mod APK risks",
+    "CapCut mod APK",
   ],
   authors: [{ name: siteConfig.name }],
   icons: {
@@ -51,20 +53,20 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: "CapCut Pro APK Guide | Official Features & Safe Install",
+    title: "CapCut Pro Mod APK v18.5.0 Free Download Official",
     description: siteConfig.description,
     images: [
       {
         url: "/capcut-pro-mod-apk.webp",
         width: 512,
         height: 512,
-        alt: "CapCut Pro",
+        alt: "CapCut Pro Mod APK",
       },
     ],
   },
   twitter: {
     card: "summary",
-    title: "CapCut Pro APK Guide",
+    title: "CapCut Pro Mod APK v18.5.0 Free Download Official",
     description: siteConfig.description,
     images: ["/capcut-pro-mod-apk.webp"],
   },

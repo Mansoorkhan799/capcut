@@ -18,9 +18,10 @@ export function createMetadata({
 }): Metadata {
   const url = `${siteConfig.url}${path}`;
   const fullTitle =
+    title === "CapCut Pro Mod APK v18.5.0 Free Download Official" ||
     title === siteConfig.brand
-      ? "CapCut Pro APK Guide (2026): Features, Safe Install & Mod Risks"
-      : `${title} | CapCut Pro Guide`;
+      ? "CapCut Pro Mod APK v18.5.0 Free Download Official"
+      : `${title} | CapCut Pro Mod APK`;
 
   return {
     title: fullTitle,

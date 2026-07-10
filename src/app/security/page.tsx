@@ -1,6 +1,7 @@
 import { OfficialCta } from "@/components/OfficialCta";
 import { PageHero } from "@/components/PageHero";
 import { createMetadata } from "@/lib/seo";
+import { siteConfig } from "@/lib/site";
 
 export const metadata = createMetadata({
   title: "CapCut Mod APK Risks vs Official Pro",
@@ -22,8 +23,8 @@ export default function SecurityPage() {
       <article className="prose-guide mx-auto max-w-3xl px-4 py-12 sm:px-6">
         <p>
           Official CapCut from Google Play or{" "}
-          <a href="https://www.capcut.com/" target="_blank" rel="noopener noreferrer">
-            capcut.com
+          <a href={siteConfig.url} target="_blank" rel="noopener noreferrer">
+            capcutpromodapk.org
           </a>{" "}
           is signed and audited. Cracked mods are typically decompiled from{" "}
           <strong>com.lemon.lvoverseas</strong>, injected with unknown code, and

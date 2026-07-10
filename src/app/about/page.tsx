@@ -47,7 +47,7 @@ export default function AboutPage() {
           <li>
             Prefer official sources:{" "}
             <a href={siteConfig.officialWebsite} target="_blank" rel="noopener noreferrer">
-              capcut.com
+              capcutpromodapk.org
             </a>{" "}
             and{" "}
             <a href={siteConfig.playStore} target="_blank" rel="noopener noreferrer">

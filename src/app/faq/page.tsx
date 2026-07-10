@@ -7,7 +7,7 @@ import { createMetadata } from "@/lib/seo";
 export const metadata = createMetadata({
   title: "CapCut Pro APK FAQ",
   description:
-    "FAQ: CapCut Pro vs free, are mod APKs safe, official sideload from capcut.com, parsing errors, rooting, and the 15-minute limit.",
+    "FAQ: CapCut Pro vs free, are mod APKs safe, official sideload from capcutpromodapk.org, parsing errors, rooting, and the 15-minute limit.",
   path: "/faq",
 });
 

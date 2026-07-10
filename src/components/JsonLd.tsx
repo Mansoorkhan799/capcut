@@ -66,7 +66,7 @@ export function HowToInstallJsonLd() {
           {
             "@type": "HowToStep",
             name: "Secure package acquisition",
-            text: "Download CapCut only from capcut.com or Google Play.",
+            text: "Download CapCut only from capcutpromodapk.org or Google Play.",
           },
           {
             "@type": "HowToStep",

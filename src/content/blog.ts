@@ -40,7 +40,7 @@ export const blogPosts: BlogPost[] = [
     keyTakeaways: [
       "CapCut Mod APKs from third-party sites are unverified and frequently bundled with malware or adware.",
       "Cracked builds can crash, corrupt projects, miss security patches, and trigger account bans.",
-      "The safe path is Google Play or capcut.com, plus an official CapCut Pro subscription for premium features.",
+      "The safe path is Google Play or capcutpromodapk.org, plus an official CapCut Pro subscription for premium features.",
     ],
     relatedSlugs: [
       "how-to-download-capcut-apk-officially",
@@ -96,7 +96,7 @@ export const blogPosts: BlogPost[] = [
         items: [
           "It promises “CapCut Pro unlocked forever” with no subscription.",
           "Download buttons jump through multiple ad redirects.",
-          "The file is hosted on a random mirror, not Play Store or capcut.com.",
+          "The file is hosted on a random mirror, not Play Store or capcutpromodapk.org.",
           "The site avoids saying who publishes the APK or how it is signed.",
           "Comments mention viruses, black screens, or stolen accounts.",
         ],
@@ -143,7 +143,7 @@ export const blogPosts: BlogPost[] = [
     slug: "how-to-download-capcut-apk-officially",
     title: "How to Download CapCut APK Officially on Android (Safe 2026 Guide)",
     description:
-      "Download CapCut APK the safe way: Google Play or official CapCut.com steps, permissions, and fixes for App not installed errors.",
+      "Download CapCut APK the safe way: Google Play or official capcutpromodapk.org steps, permissions, and fixes for App not installed errors.",
     date: "2026-07-10",
     updated: "2026-07-10",
     category: "Install",
@@ -154,7 +154,7 @@ export const blogPosts: BlogPost[] = [
       "install CapCut without Play Store",
     ],
     keyTakeaways: [
-      "Prefer Google Play when available; otherwise download only from capcut.com.",
+      "Prefer Google Play when available; otherwise download only from capcutpromodapk.org.",
       "Uninstall old CapCut builds first to avoid signature conflicts.",
       "Never use random “mod APK” mirrors for CapCut installs.",
     ],
@@ -186,7 +186,7 @@ export const blogPosts: BlogPost[] = [
       {
         type: "h2",
         id: "official-apk",
-        text: "Method 2: Official CapCut APK from capcut.com",
+        text: "Method 2: Official CapCut APK from capcutpromodapk.org",
       },
       {
         type: "p",
@@ -196,7 +196,7 @@ export const blogPosts: BlogPost[] = [
         type: "ol",
         items: [
           "Uninstall any existing CapCut app to avoid signature collisions.",
-          "Open a browser and go to capcut.com.",
+          "Open a browser and go to capcutpromodapk.org.",
           "Choose the Android APK download from CapCut’s official download area.",
           "If Android warns that APK files may be harmful, continue only because the source is CapCut’s own site.",
           "Open the file in Downloads, allow install permission for that browser/file manager, then tap Install.",
@@ -374,7 +374,7 @@ export const blogPosts: BlogPost[] = [
       {
         type: "ol",
         items: [
-          "Open the official CapCut app from Play Store or capcut.com.",
+          "Open the official CapCut app from Play Store or capcutpromodapk.org.",
           "Go to the Pro / subscription area inside CapCut.",
           "Choose a plan that includes watermark-free exports for your region.",
           "Re-export your project and confirm the end card is gone before publishing.",
@@ -469,7 +469,7 @@ export const blogPosts: BlogPost[] = [
         items: [
           "Uninstall every existing CapCut variant from Settings → Apps.",
           "Free at least 1.5–2 GB of internal storage.",
-          "Re-download CapCut from Google Play or capcut.com (not a mod mirror).",
+          "Re-download CapCut from Google Play or capcutpromodapk.org (not a mod mirror).",
           "Confirm the APK matches your device architecture (modern phones need arm64-v8a support).",
           "Enable Allow from this source for the browser/file manager used to open the APK.",
         ],

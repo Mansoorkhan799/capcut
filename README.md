@@ -24,5 +24,5 @@ Connect the repo to Vercel (or any Node host), set the custom domain to `capcutp
 
 ## Notes
 
-- Official download CTAs point to [capcut.com](https://www.capcut.com/) and Google Play.
+- Official download CTAs point to [capcutpromodapk.org](https://www.capcutpromodapk.org/) and Google Play.
 - The site does not host or distribute cracked CapCut packages.

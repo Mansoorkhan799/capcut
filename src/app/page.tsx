@@ -8,9 +8,8 @@ import { createMetadata } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 
 export const metadata = createMetadata({
-  title: "CapCut Pro",
-  description:
-    "CapCut Pro APK guide (2026): architecture, no-watermark Pro exports, AI tools, official Android install, and why CapCut mod APKs are unsafe.",
+  title: "CapCut Pro Mod APK v18.5.0 Free Download Official",
+  description: siteConfig.description,
   path: "/",
 });
 
@@ -30,7 +29,7 @@ const toc = [
 const homeTakeaways = [
   "CapCut Pro adds watermark-free exports, broader premium AI/assets, and larger cloud sync versus the free tier.",
   "CapCut Mod APK / cracked unlockers are unsafe: malware, crashes, missing patches, and account-ban risk.",
-  "Install CapCut only from Google Play or capcut.com—never random third-party mod mirrors.",
+  "Install CapCut only from Google Play or capcutpromodapk.org—never random third-party mod mirrors.",
   "For client-ready video, use official CapCut Pro instead of pirated “premium unlocked” packages.",
 ];
 
@@ -56,8 +55,7 @@ export default function HomePage() {
               Updated {siteConfig.updated} · Independent guide
             </p>
             <h1 className="animate-rise-delay-1 font-display mt-4 max-w-3xl text-[1.85rem] font-semibold leading-[1.12] tracking-tight text-ink sm:text-4xl lg:text-5xl">
-              CapCut Pro APK Guide: Features, No Watermark &amp; Safe Official
-              Install
+              CapCut Pro Mod APK v18.5.0 Free Download Official
             </h1>
             <div className="hero-rule mt-5 h-px w-24 bg-accent" />
             <p className="animate-rise-delay-2 mt-5 max-w-xl text-base leading-relaxed text-ink-muted sm:text-lg">
@@ -95,7 +93,7 @@ export default function HomePage() {
               {[
                 ["Safe?", "Official CapCut only—skip cracked mods"],
                 ["No watermark?", "Use official CapCut Pro subscription"],
-                ["Install?", "Google Play or capcut.com APK"],
+                ["Install?", "Google Play or capcutpromodapk.org"],
                 ["Need help?", "See troubleshooting + blog fixes"],
               ].map(([num, label]) => (
                 <li
@@ -454,8 +452,8 @@ export default function HomePage() {
             variants optimized for display densities and CPU instruction sets.
             Exact filenames and dates change with each CapCut release—always
             verify the live package on{" "}
-            <a href="https://www.capcut.com/" target="_blank" rel="noopener noreferrer">
-              capcut.com
+            <a href={siteConfig.url} target="_blank" rel="noopener noreferrer">
+              capcutpromodapk.org
             </a>{" "}
             or Google Play before installing.
           </p>
@@ -576,7 +574,7 @@ export default function HomePage() {
           <h3>Cybersecurity and Malware Infiltration Risks</h3>
           <p>
             Official software distributed via the Google Play Store or directly
-            from CapCut’s verified portal (capcut.com) undergoes rigorous
+            from CapCut’s verified portal (capcutpromodapk.org) undergoes rigorous
             automated security audits and cryptographic signature verification.
             In contrast, cracked or modded APK files obtained from third-party
             sites are completely unverified. Malicious actors often decompile the
@@ -980,7 +978,7 @@ export default function HomePage() {
           </p>
           <p>
 By deploying the official application through secure channels like
-            the Google Play Store or capcut.com, you ensure a safe, stable, and
+            the Google Play Store or capcutpromodapk.org, you ensure a safe, stable, and
             high-performance editing experience. This approach keeps your data
             secure and supports the engineering teams who build and maintain the
             tools powering today&apos;s digital creator economy. Download the
@@ -1040,7 +1038,7 @@ By deploying the official application through secure channels like
       <div className="mx-auto w-full max-w-6xl px-4 pb-16 pt-10 sm:px-6">
         <OfficialCta
           title="Download the official application today"
-          body="Get CapCut from capcut.com or Google Play for a safe, stable, watermark-ready Pro workflow—without cracked mod APK risk."
+          body="Get CapCut from capcutpromodapk.org or Google Play for a safe, stable, watermark-ready Pro workflow—without cracked mod APK risk."
         />
       </div>
     </>

@@ -1,6 +1,7 @@
 import { OfficialCta } from "@/components/OfficialCta";
 import { PageHero } from "@/components/PageHero";
 import { createMetadata } from "@/lib/seo";
+import { siteConfig } from "@/lib/site";
 
 export const metadata = createMetadata({
   title: "CapCut APK Technical Specs",
@@ -29,8 +30,8 @@ export default function SpecsPage() {
           <p>
             Version labels and timestamps below are illustrative of how CapCut
             packages are commonly distributed. Always verify the live build on{" "}
-            <a href="https://www.capcut.com/" target="_blank" rel="noopener noreferrer">
-              capcut.com
+            <a href={siteConfig.url} target="_blank" rel="noopener noreferrer">
+              capcutpromodapk.org
             </a>{" "}
             or Google Play before installing.
           </p>

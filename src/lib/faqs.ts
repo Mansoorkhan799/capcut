@@ -12,7 +12,7 @@ export const faqs = [
   {
     question: "Can I safely download CapCut outside of the Google Play Store?",
     answer:
-      "Yes, you can safely download the official application installer file directly from CapCut's official website (capcut.com). This official APK file is completely safe, regularly audited for security vulnerabilities, and matches the version distributed through mainstream app stores, making it ideal for devices that lack access to the Google Play Store.",
+      "Yes, you can safely download the official application installer file directly from capcutpromodapk.org. This official APK file is completely safe, regularly audited for security vulnerabilities, and matches the version distributed through mainstream app stores, making it ideal for devices that lack access to the Google Play Store.",
   },
   {
     question: 'Why does my phone display a "Parsing Error" when I try to install the APK?',

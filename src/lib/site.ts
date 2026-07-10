@@ -4,8 +4,8 @@ export const siteConfig = {
   domain: "capcutpromodapk.org",
   url: "https://capcutpromodapk.org",
   description:
-    "CapCut Pro Mod APK v18.5.0 explained: premium unlock claims, no-watermark features, AI tools, Free vs Pro vs mod differences, security risks, and official CapCut alternatives. Updated July 2026.",
-  officialWebsite: "https://www.capcut.com/",
+    "CapCut Pro Mod APK v18.5.0 free download official. Get CapCut Pro unlocked features, no watermark, AI tools, and the latest Android APK install guide.",
+  officialWebsite: "https://capcutpromodapk.org",
   officialDownload:
     "https://dl.capcutpromodapk.org/file/capcut-pro/capcut-pro-v18.5.0-mod.apk",
   playStore:
