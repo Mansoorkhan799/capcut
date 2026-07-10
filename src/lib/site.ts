@@ -43,7 +43,7 @@ export const siteConfig = {
 
 export const navLinks = [
   { href: "/features", label: "Features" },
-  { href: "/free-vs-pro", label: "Free vs Pro" },
+  { href: "/blog/capcut-pro-vs-free", label: "Free vs Pro" },
   { href: "/security", label: "Mod Risks" },
   { href: "/install", label: "Install" },
   { href: "/blog", label: "Blog" },
@@ -56,7 +56,7 @@ export const footerLinks = [
   { href: "/assets-export", label: "Assets & Export" },
   { href: "/specs", label: "Technical Specs" },
   { href: "/security", label: "Official vs Mod Risks" },
-  { href: "/free-vs-pro", label: "Free vs Pro" },
+  { href: "/blog/capcut-pro-vs-free", label: "Free vs Pro" },
   { href: "/install", label: "Safe Install Guide" },
   { href: "/troubleshooting", label: "Troubleshooting" },
   { href: "/blog", label: "Blog" },

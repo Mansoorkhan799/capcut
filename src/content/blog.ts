@@ -264,7 +264,7 @@ export const blogPosts: BlogPost[] = [
       "is-capcut-mod-apk-safe",
       "capcut-export-4k-60fps-settings",
     ],
-    relatedPaths: [{ href: "/free-vs-pro", label: "Full comparison matrix" }],
+    relatedPaths: [{ href: "/blog/capcut-pro-vs-free", label: "Full comparison matrix" }],
     content: [
       {
         type: "p",
@@ -360,7 +360,7 @@ export const blogPosts: BlogPost[] = [
       "is-capcut-mod-apk-safe",
       "capcut-export-4k-60fps-settings",
     ],
-    relatedPaths: [{ href: "/free-vs-pro", label: "Free vs Pro details" }],
+    relatedPaths: [{ href: "/blog/capcut-pro-vs-free", label: "Free vs Pro details" }],
     content: [
       {
         type: "p",

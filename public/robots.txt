@@ -38,7 +38,6 @@ Allow: /ai-features
 Allow: /assets-export
 Allow: /specs
 Allow: /security
-Allow: /free-vs-pro
 Allow: /troubleshooting
 Allow: /faq
 Allow: /about

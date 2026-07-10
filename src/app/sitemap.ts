@@ -9,7 +9,6 @@ const paths = [
   "/assets-export",
   "/specs",
   "/security",
-  "/free-vs-pro",
   "/install",
   "/troubleshooting",
   "/faq",
