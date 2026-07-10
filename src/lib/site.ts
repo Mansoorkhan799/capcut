@@ -10,13 +10,35 @@ export const siteConfig = {
     "https://dl.capcutpromodapk.org/file/capcut-pro/capcut-pro-v18.5.0-mod.apk",
   playStore:
     "https://play.google.com/store/apps/details?id=com.lemon.lvoverseas",
-  email: "hello@capcutpromodapk.org",
+  email: "capcutpro.site@gmail.com",
   updated: "July 11, 2026",
   versionLabel: "v18.5.0",
   author: {
     name: "CapCut Pro Mod APK Editorial",
     role: "Independent CapCut Pro Mod APK research & creator safety guides",
   },
+  social: [
+    {
+      label: "Facebook",
+      href: "https://www.facebook.com/groups/capcutofficial/",
+    },
+    {
+      label: "Instagram",
+      href: "https://www.instagram.com/popular/capcut/?hl=en",
+    },
+    {
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/company/capcut",
+    },
+    {
+      label: "YouTube",
+      href: "https://www.youtube.com/@CapCutofficial/videos",
+    },
+    {
+      label: "X",
+      href: "https://x.com/Capcut_CS?lang=en",
+    },
+  ],
 };
 
 export const navLinks = [

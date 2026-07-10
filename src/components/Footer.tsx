@@ -25,6 +25,26 @@ export function Footer() {
             Not affiliated with ByteDance or CapCut. CapCut is a trademark of its
             respective owners.
           </p>
+
+          <div className="mt-6">
+            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">
+              Follow CapCut
+            </p>
+            <ul className="mt-3 flex flex-wrap gap-2">
+              {siteConfig.social.map((item) => (
+                <li key={item.href}>
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center border border-line bg-bg px-3 py-1.5 text-xs font-medium text-ink-muted transition hover:border-slate-400 hover:text-ink"
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
         <div>

@@ -1,4 +1,8 @@
 import { HowToInstallJsonLd } from "@/components/JsonLd";
+import {
+  InstallGuideVisuals,
+  InstallStepImage,
+} from "@/components/InstallGuideVisuals";
 import { OfficialCta } from "@/components/OfficialCta";
 import { PageHero } from "@/components/PageHero";
 import { createMetadata } from "@/lib/seo";
@@ -24,25 +28,40 @@ const phases = [
     title: "Phase 2 — Secure package acquisition",
     steps: [
       "Open a secure browser and go to CapCut’s official site: capcutpromodapk.org.",
-      "Use Google Play install, or choose Download Android APK from CapCut.",
+      "Tap Official CapCut download / Download APK.",
       "Do not download CapCut from random “mod APK” mirrors.",
     ],
+    image: {
+      src: "/capcut-pro-mod-apk-installation.webp",
+      alt: "Tap Official CapCut download on capcutpromodapk.org",
+      caption: "Start here: tap Official CapCut download on this site.",
+    },
   },
   {
     title: "Phase 3 — Browser security banners",
     steps: [
       "Android may warn: “This type of file may be harmful.”",
-      "For files fetched directly from CapCut’s verified servers, continue with Download anyway.",
+      "For files fetched from our verified download host, continue with Download anyway.",
       "If the file came from an unknown third party, cancel immediately.",
     ],
+    image: {
+      src: "/capcut-pro-apk.webp",
+      alt: "Android File might be harmful dialog with Download anyway",
+      caption: "Choose Download anyway when the warning appears for our APK.",
+    },
   },
   {
     title: "Phase 4 — Installation permissions",
     steps: [
-      "Open Files / Downloads and tap the official installer (for example com.lemon.lvoverseas_*.apk).",
+      "Open Files / Downloads and tap capcut-pro-v18.5.0-mod.apk.",
       "When prompted, open Settings and enable Allow from this source.",
-      "Tap Install, wait for completion, then launch CapCut.",
+      "Tap Install, wait for completion, then Open CapCut and Agree and continue.",
     ],
+    image: {
+      src: "/capcut-apk-free.webp",
+      alt: "CapCut APK installing with progress bar",
+      caption: "Allow the installer to finish, then open CapCut.",
+    },
   },
 ];
 
@@ -78,6 +97,20 @@ export default function InstallPage() {
           </a>
         </div>
 
+        <section className="mb-12">
+          <p className="text-xs font-semibold uppercase tracking-[0.14em] text-accent-deep">
+            Visual walkthrough
+          </p>
+          <h2 className="font-display mt-2 text-2xl font-semibold tracking-tight text-ink">
+            Download & install screenshots
+          </h2>
+          <p className="mt-3 text-sm leading-relaxed text-ink-muted sm:text-base">
+            Follow these phone screens in order—from tapping download to opening
+            CapCut after install.
+          </p>
+          <InstallGuideVisuals />
+        </section>
+
         <ol className="space-y-4">
           {phases.map((phase, index) => (
             <li key={phase.title} className="border border-line bg-white p-6">
@@ -97,6 +130,13 @@ export default function InstallPage() {
                   </li>
                 ))}
               </ul>
+              {"image" in phase && phase.image ? (
+                <InstallStepImage
+                  src={phase.image.src}
+                  alt={phase.image.alt}
+                  caption={phase.image.caption}
+                />
+              ) : null}
             </li>
           ))}
         </ol>

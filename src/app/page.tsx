@@ -1,5 +1,9 @@
 import Link from "next/link";
 import { KeyTakeaways } from "@/components/BlogContent";
+import {
+  InstallGuideVisuals,
+  InstallStepImage,
+} from "@/components/InstallGuideVisuals";
 import { FaqJsonLd, HowToInstallJsonLd } from "@/components/JsonLd";
 import { OfficialCta } from "@/components/OfficialCta";
 import { getAllPosts } from "@/content/blog";
@@ -750,6 +754,8 @@ export default function HomePage() {
             step-by-step walkthrough to complete the installation safely.
           </p>
 
+          <InstallGuideVisuals compact />
+
           <h3>Phase 1: Clean System Preparation</h3>
           <p>
             Before starting a manual package installation, you must clean up your
@@ -793,6 +799,11 @@ export default function HomePage() {
               APK package before you open it.
             </li>
           </ol>
+          <InstallStepImage
+            src="/capcut-pro-mod-apk-download.webp"
+            alt="CapCut Pro v18.5.0 Mod APK downloading in Chrome Downloads"
+            caption="Your Downloads list should show capcut-pro-v18.5.0-mod.apk in progress."
+          />
 
           <h3>Phase 3: Bypassing Browser Security Alert Banners</h3>
           <ol className="mb-6 list-decimal space-y-2 pl-5 text-ink-muted">
@@ -808,6 +819,11 @@ export default function HomePage() {
               to your local storage.
             </li>
           </ol>
+          <InstallStepImage
+            src="/capcut-pro-apk.webp"
+            alt="Android File might be harmful dialog with Download anyway"
+            caption="Tap Download anyway when Android shows the harmful-file warning."
+          />
 
           <h3>Phase 4: Enabling System Installation Permissions</h3>
           <ol className="mb-6 list-decimal space-y-2 pl-5 text-ink-muted">
@@ -834,6 +850,26 @@ export default function HomePage() {
               app.
             </li>
           </ol>
+          <div className="not-prose my-6 grid gap-4 sm:grid-cols-3">
+            <InstallStepImage
+              src="/capcut-apk-free.webp"
+              alt="CapCut APK installing with progress bar"
+              caption="Wait while CapCut finishes installing."
+              className="my-0"
+            />
+            <InstallStepImage
+              src="/capcut-apk-download.webp"
+              alt="CapCut App installed dialog with Open button"
+              caption="When install completes, tap Open."
+              className="my-0"
+            />
+            <InstallStepImage
+              src="/capcut-apk-interface.webp"
+              alt="CapCut Terms of Service Agree and continue screen"
+              caption="On first launch, tap Agree and continue to start editing."
+              className="my-0"
+            />
+          </div>
 
           <h2 id="troubleshooting">
             8. Advanced Troubleshooting and Runtime Maintenance Guide
