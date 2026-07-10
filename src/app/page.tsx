@@ -1,5 +1,8 @@
+import Link from "next/link";
+import { KeyTakeaways } from "@/components/BlogContent";
 import { FaqJsonLd, HowToInstallJsonLd } from "@/components/JsonLd";
 import { OfficialCta } from "@/components/OfficialCta";
+import { getAllPosts } from "@/content/blog";
 import { faqs } from "@/lib/faqs";
 import { createMetadata } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
@@ -7,7 +10,7 @@ import { siteConfig } from "@/lib/site";
 export const metadata = createMetadata({
   title: "CapCut Pro",
   description:
-    "The ultimate guide to CapCut Pro APK: architecture, no watermark & premium unlocked features, AI tools, safe deployment mechanics, and why cracked mod APKs are unsafe.",
+    "CapCut Pro APK guide (2026): architecture, no-watermark Pro exports, AI tools, official Android install, and why CapCut mod APKs are unsafe.",
   path: "/",
 });
 
@@ -24,7 +27,16 @@ const toc = [
   { id: "conclusion", label: "10. Conclusion" },
 ];
 
+const homeTakeaways = [
+  "CapCut Pro adds watermark-free exports, broader premium AI/assets, and larger cloud sync versus the free tier.",
+  "CapCut Mod APK / cracked unlockers are unsafe: malware, crashes, missing patches, and account-ban risk.",
+  "Install CapCut only from Google Play or capcut.com—never random third-party mod mirrors.",
+  "For client-ready video, use official CapCut Pro instead of pirated “premium unlocked” packages.",
+];
+
 export default function HomePage() {
+  const latestPosts = getAllPosts().slice(0, 4);
+
   return (
     <>
       <FaqJsonLd />
@@ -41,15 +53,20 @@ export default function HomePage() {
         <div className="relative mx-auto grid w-full max-w-6xl gap-8 px-4 py-12 sm:gap-10 sm:px-6 sm:py-16 lg:grid-cols-[1.15fr_0.85fr] lg:items-end lg:py-20">
           <div className="min-w-0">
             <p className="animate-rise text-xs font-semibold uppercase tracking-[0.18em] text-accent-deep">
-              Ultimate technical guide
+              Updated {siteConfig.updated} · Independent guide
             </p>
-            <h1 className="animate-rise-delay-1 font-display mt-4 max-w-3xl text-[2rem] font-semibold leading-[1.08] tracking-tight text-ink sm:text-5xl lg:text-[3.5rem]">
-              CapCut Pro APK
+            <h1 className="animate-rise-delay-1 font-display mt-4 max-w-3xl text-[1.85rem] font-semibold leading-[1.12] tracking-tight text-ink sm:text-4xl lg:text-5xl">
+              CapCut Pro APK Guide: Features, No Watermark &amp; Safe Official
+              Install
             </h1>
             <div className="hero-rule mt-5 h-px w-24 bg-accent" />
             <p className="animate-rise-delay-2 mt-5 max-w-xl text-base leading-relaxed text-ink-muted sm:text-lg">
-              Architecture, No Watermark &amp; Premium Unlocked, AI Features, and
-              Safe Deployment Mechanics
+              A people-first technical guide to CapCut architecture, AI tools,
+              Pro vs free limits, and why cracked CapCut Mod APKs are a security
+              trap—not a shortcut.
+            </p>
+            <p className="mt-3 text-xs text-slate-500">
+              By {siteConfig.author.name}
             </p>
             <div className="animate-rise-delay-3 mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <a
@@ -63,28 +80,28 @@ export default function HomePage() {
               <a href="#security" className="btn-secondary w-full sm:w-auto">
                 Mod APK risks
               </a>
-              <a href="#install" className="btn-secondary w-full sm:w-auto">
-                Safe install steps
-              </a>
+              <Link href="/blog" className="btn-secondary w-full sm:w-auto">
+                Read CapCut blog
+              </Link>
             </div>
           </div>
 
           <div className="animate-rise-delay-2 min-w-0 border border-line bg-bg p-4 sm:p-6">
             <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
-              Guide coverage
+              Direct answers
             </p>
             <ul className="mt-4 space-y-0 divide-y divide-line border border-line bg-white">
               {[
-                ["01", "Feature architecture & timeline tools"],
-                ["02", "AI captions, TTS, and subject isolation"],
-                ["03", "Free vs Pro vs cracked packages"],
-                ["04", "Official install & threat assessment"],
+                ["Safe?", "Official CapCut only—skip cracked mods"],
+                ["No watermark?", "Use official CapCut Pro subscription"],
+                ["Install?", "Google Play or capcut.com APK"],
+                ["Need help?", "See troubleshooting + blog fixes"],
               ].map(([num, label]) => (
                 <li
                   key={num}
                   className="flex items-start gap-4 px-4 py-3.5 text-sm text-ink-muted"
                 >
-                  <span className="font-display text-xs font-semibold text-accent-deep">
+                  <span className="font-display shrink-0 text-xs font-semibold text-accent-deep">
                     {num}
                   </span>
                   <span>{label}</span>
@@ -95,7 +112,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      <div className="mx-auto grid w-full max-w-6xl gap-8 px-4 py-10 sm:gap-10 sm:px-6 sm:py-12 lg:grid-cols-[200px_minmax(0,1fr)] lg:py-16">
+      <div className="mx-auto w-full max-w-3xl px-4 pt-10 sm:px-6">
+        <KeyTakeaways items={homeTakeaways} />
+      </div>
+
+      <div className="mx-auto grid w-full max-w-6xl gap-8 px-4 py-6 sm:gap-10 sm:px-6 lg:grid-cols-[200px_minmax(0,1fr)] lg:py-10">
         <aside className="min-w-0 lg:sticky lg:top-24 lg:self-start">
           <p className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">
             Contents
@@ -114,6 +135,13 @@ export default function HomePage() {
         </aside>
 
         <article className="prose-guide w-full min-w-0 max-w-full">
+          <p>
+            <strong>Quick verdict:</strong> CapCut (by ByteDance) is a capable
+            mobile editor for TikTok, Reels, Shorts, and Status content. CapCut
+            Pro is the official paid path for watermark-free exports and premium
+            tools. CapCut Mod APK downloads that promise “premium unlocked” are
+            unofficial, high-risk, and not recommended.
+          </p>
           <p>
             The digital media landscape has undergone an architectural shift
             toward short-form, high-impact vertical video content. Platforms like
@@ -420,10 +448,15 @@ export default function HomePage() {
 
           <h3>Android Package Specifications &amp; Variant Arrays</h3>
           <p>
-            When auditing official application releases, such as the major CapCut
-            18.4.0, 18.5.0, and 18.6.0 milestones, the application is split across
-            distinct system variants optimized for diverse display densities and
-            CPU instruction sets.
+            When auditing official application releases across CapCut 18.4.x–18.6.x
+            style build families, the application is commonly split across
+            variants optimized for display densities and CPU instruction sets.
+            Exact filenames and dates change with each CapCut release—always
+            verify the live package on{" "}
+            <a href="https://www.capcut.com/" target="_blank" rel="noopener noreferrer">
+              capcut.com
+            </a>{" "}
+            or Google Play before installing.
           </p>
         </article>
       </div>
@@ -944,7 +977,7 @@ export default function HomePage() {
             benefits.
           </p>
           <p>
-            By deploying the official application through secure channels like
+By deploying the official application through secure channels like
             the Google Play Store or capcut.com, you ensure a safe, stable, and
             high-performance editing experience. This approach keeps your data
             secure and supports the engineering teams who build and maintain the
@@ -952,10 +985,57 @@ export default function HomePage() {
             official application today and start turning your creative visions
             into high-quality, memorable content.
           </p>
+          <p>
+            Next reads:{" "}
+            <Link href="/blog/is-capcut-mod-apk-safe">Is CapCut Mod APK safe?</Link>
+            ,{" "}
+            <Link href="/blog/how-to-download-capcut-apk-officially">
+              official CapCut APK download
+            </Link>
+            , and{" "}
+            <Link href="/blog/capcut-pro-vs-free">CapCut Pro vs free</Link>.
+          </p>
         </article>
       </div>
 
-<div className="mx-auto w-full max-w-6xl px-4 pb-16 sm:px-6">
+      <section className="border-y border-line bg-white">
+        <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-accent-deep">
+                Blog cluster
+              </p>
+              <h2 className="font-display mt-2 text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
+                High-intent CapCut articles
+              </h2>
+            </div>
+            <Link href="/blog" className="text-sm font-semibold text-accent-deep">
+              View all posts →
+            </Link>
+          </div>
+          <div className="mt-8 grid gap-4 md:grid-cols-2">
+            {latestPosts.map((post) => (
+              <Link
+                key={post.slug}
+                href={`/blog/${post.slug}`}
+                className="border border-line p-5 transition hover:border-accent"
+              >
+                <p className="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">
+                  {post.category}
+                </p>
+                <h3 className="font-display mt-2 text-lg font-semibold text-ink">
+                  {post.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-ink-muted">
+                  {post.description}
+                </p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <div className="mx-auto w-full max-w-6xl px-4 pb-16 pt-10 sm:px-6">
         <OfficialCta
           title="Download the official application today"
           body="Get CapCut from capcut.com or Google Play for a safe, stable, watermark-ready Pro workflow—without cracked mod APK risk."

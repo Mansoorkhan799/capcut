@@ -17,6 +17,9 @@
 /.next/
 /out/
 
+# firecrawl cache
+.firecrawl/
+
 # production
 /build
 
