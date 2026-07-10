@@ -1,26 +1,307 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #f7f8fa;
+  --bg-elevated: #ffffff;
+  --ink: #0f172a;
+  --ink-muted: #475569;
+  --line: #e2e8f0;
+  --accent: #0f766e;
+  --accent-deep: #115e59;
+  --accent-soft: #f0fdfa;
+  --surface: #0f172a;
+  --surface-muted: #1e293b;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg: var(--bg);
+  --color-bg-elevated: var(--bg-elevated);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-deep: var(--accent-deep);
+  --color-accent-soft: var(--accent-soft);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(rgba(15, 23, 42, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 23, 42, 0.03) 1px, transparent 1px),
+    linear-gradient(180deg, #ffffff 0%, #f7f8fa 48%, #f1f5f9 100%);
+  background-size:
+    48px 48px,
+    48px 48px,
+    100% 100%;
+  color: var(--ink);
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+::selection {
+  background: #ccfbf1;
+  color: var(--ink);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.font-display {
+  font-family: var(--font-display), system-ui, sans-serif;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  background: var(--ink);
+  padding: 0.75rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: #fff;
+  transition: background 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: var(--accent-deep);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  border: 1px solid var(--line);
+  background: #fff;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--ink);
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.btn-secondary:hover {
+  border-color: #94a3b8;
+  background: #f8fafc;
+}
+
+.prose-guide h2 {
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-size: clamp(1.25rem, 4.5vw, 1.75rem);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  margin: 2.75rem 0 1rem;
+  padding-top: 0.5rem;
+  color: var(--ink);
+  scroll-margin-top: 6rem;
+  border-top: 1px solid var(--line);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.prose-guide h2:first-of-type {
+  border-top: none;
+  margin-top: 1.5rem;
+}
+
+.prose-guide h3 {
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 1.75rem 0 0.65rem;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+}
+
+.prose-guide p {
+  color: var(--ink-muted);
+  line-height: 1.8;
+  margin: 0 0 1.05rem;
+  font-size: 1.015rem;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.prose-guide ul {
+  margin: 0 0 1.35rem;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.9rem;
+}
+
+.prose-guide li {
+  position: relative;
+  padding-left: 1rem;
+  color: var(--ink-muted);
+  line-height: 1.7;
+  border-left: 2px solid #cbd5e1;
+  padding-left: 1rem;
+  margin-left: 0.15rem;
+}
+
+.prose-guide li::before {
+  display: none;
+}
+
+.prose-guide strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.prose-guide a {
+  color: var(--accent-deep);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+.prose-guide ol {
+  margin: 0 0 1.35rem;
+  padding-left: 1.25rem;
+  color: var(--ink-muted);
+  line-height: 1.7;
+}
+
+.prose-guide ol li {
+  border-left: none;
+  padding-left: 0.35rem;
+  margin: 0 0 0.65rem;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.data-table th,
+.data-table td {
+  border-bottom: 1px solid var(--line);
+  padding: 0.9rem 1rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.data-table th {
+  background: #f1f5f9;
+  color: var(--ink);
+  font-weight: 600;
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.data-table td {
+  background: #fff;
+  color: var(--ink-muted);
+}
+
+.data-table tr:last-child td {
+  border-bottom: none;
+}
+
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 1.5rem 0 2.25rem;
+  border: 1px solid var(--line);
+  background: #fff;
+  max-width: 100%;
+}
+
+.table-scroll .data-table {
+  min-width: 640px;
+}
+
+@media (max-width: 640px) {
+  .data-table th,
+  .data-table td {
+    padding: 0.7rem 0.75rem;
+    font-size: 0.8rem;
+  }
+
+  .prose-guide p,
+  .prose-guide li {
+    font-size: 0.98rem;
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rule-grow {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.animate-rise {
+  animation: rise 0.7s ease-out both;
+}
+
+.animate-rise-delay-1 {
+  animation: rise 0.7s ease-out 0.1s both;
+}
+
+.animate-rise-delay-2 {
+  animation: rise 0.7s ease-out 0.2s both;
+}
+
+.animate-rise-delay-3 {
+  animation: rise 0.7s ease-out 0.3s both;
+}
+
+.hero-rule {
+  transform-origin: left center;
+  animation: rule-grow 0.9s ease-out 0.25s both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .animate-rise,
+  .animate-rise-delay-1,
+  .animate-rise-delay-2,
+  .animate-rise-delay-3,
+  .hero-rule {
+    animation: none;
+  }
 }
