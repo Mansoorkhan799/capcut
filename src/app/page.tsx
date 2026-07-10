@@ -142,8 +142,12 @@ export default function HomePage() {
             <strong>Quick verdict:</strong> CapCut (by ByteDance) is a capable
             mobile editor for TikTok, Reels, Shorts, and Status content. CapCut
             Pro is the official paid path for watermark-free exports and premium
-            tools. CapCut Mod APK downloads that promise “premium unlocked” are
-            unofficial, high-risk, and not recommended.
+            tools.{" "}
+            <Link href="/install" className="font-medium text-accent-deep underline underline-offset-3">
+              CapCut Pro Mod APK
+            </Link>{" "}
+            downloads that promise “premium unlocked” are unofficial, high-risk,
+            and not recommended.
           </p>
           <p>
             The digital media landscape has undergone an architectural shift

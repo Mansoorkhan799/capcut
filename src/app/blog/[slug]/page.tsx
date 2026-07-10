@@ -127,6 +127,13 @@ export default async function BlogPostPage({
 
       <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
         <KeyTakeaways items={post.keyTakeaways} />
+        <p className="mb-8 text-sm leading-relaxed text-ink-muted">
+          For the full features, risks, and safe install walkthrough, read our{" "}
+          <Link href="/" className="font-medium text-accent-deep underline underline-offset-3">
+            CapCut Pro Mod APK
+          </Link>{" "}
+          homepage guide.
+        </p>
         <BlogContent blocks={post.content} />
         <RelatedReading posts={related} paths={post.relatedPaths} />
       </div>
