@@ -13,6 +13,18 @@ export const siteConfig = {
   email: "capcutpro.site@gmail.com",
   updated: "July 11, 2026",
   versionLabel: "v18.5.0",
+  ogImage: "/capcut-pro-mod-apk.webp",
+  app: {
+    name: "CapCut Pro Mod APK",
+    operatingSystem: "Android",
+    applicationCategory: "GameApplication",
+    price: "0",
+    priceCurrency: "USD",
+    ratingValue: "4.5",
+    ratingCount: 500000,
+    bestRating: "5",
+    worstRating: "1",
+  },
   author: {
     name: "CapCut Pro Mod APK Editorial",
     role: "Independent CapCut Pro Mod APK research & creator safety guides",

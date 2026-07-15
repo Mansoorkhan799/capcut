@@ -5,7 +5,7 @@ import {
   KeyTakeaways,
   RelatedReading,
 } from "@/components/BlogContent";
-import { JsonLd } from "@/components/JsonLd";
+import { BreadcrumbJsonLd, JsonLd } from "@/components/JsonLd";
 import { OfficialCta } from "@/components/OfficialCta";
 import { getAllPosts, getPostBySlug, getRelatedPosts } from "@/content/blog";
 import { createMetadata } from "@/lib/seo";
@@ -64,6 +64,12 @@ export default async function BlogPostPage({
 
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Blog", href: "/blog" },
+          { name: post.title, href: `/blog/${post.slug}` },
+        ]}
+      />
       <JsonLd
         data={{
           "@context": "https://schema.org",
@@ -72,6 +78,12 @@ export default async function BlogPostPage({
           description: post.description,
           datePublished: post.date,
           dateModified: post.updated,
+          image: {
+            "@type": "ImageObject",
+            url: `${siteConfig.url}${siteConfig.ogImage}`,
+            width: 512,
+            height: 512,
+          },
           author: {
             "@type": "Organization",
             name: siteConfig.author.name,
@@ -80,6 +92,10 @@ export default async function BlogPostPage({
             "@type": "Organization",
             name: siteConfig.name,
             url: siteConfig.url,
+            logo: {
+              "@type": "ImageObject",
+              url: `${siteConfig.url}${siteConfig.ogImage}`,
+            },
           },
           mainEntityOfPage: `${siteConfig.url}/blog/${post.slug}`,
           keywords: post.keywords.join(", "),
@@ -104,7 +120,10 @@ export default async function BlogPostPage({
 
       <article className="border-b border-line bg-white">
         <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6 sm:py-14">
-          <nav className="mb-5 flex flex-wrap items-center gap-2 text-xs text-slate-500">
+          <nav
+            aria-label="Breadcrumb"
+            className="mb-5 flex flex-wrap items-center gap-2 text-xs text-slate-500"
+          >
             <Link href="/" className="hover:text-ink">
               Home
             </Link>

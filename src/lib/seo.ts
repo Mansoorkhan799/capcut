@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import { siteConfig } from "./site";
 
+const defaultOgImage = {
+  url: siteConfig.ogImage,
+  width: 512,
+  height: 512,
+  alt: "CapCut Pro Mod APK",
+};
+
 export function createMetadata({
   title,
   description,
@@ -8,6 +15,7 @@ export function createMetadata({
   type = "website",
   publishedTime,
   modifiedTime,
+  image,
 }: {
   title: string;
   description: string;
@@ -15,6 +23,7 @@ export function createMetadata({
   type?: "website" | "article";
   publishedTime?: string;
   modifiedTime?: string;
+  image?: string;
 }): Metadata {
   const url = `${siteConfig.url}${path}`;
   const fullTitle =
@@ -22,6 +31,14 @@ export function createMetadata({
     title === siteConfig.brand
       ? "CapCut Pro Mod APK v18.5.0 Free Download Official"
       : `${title} | CapCut Pro Mod APK`;
+  const ogImage = image
+    ? {
+        url: image,
+        width: 512,
+        height: 512,
+        alt: fullTitle,
+      }
+    : defaultOgImage;
 
   return {
     title: fullTitle,
@@ -36,6 +53,7 @@ export function createMetadata({
       siteName: siteConfig.name,
       type,
       locale: "en_US",
+      images: [ogImage],
       ...(publishedTime ? { publishedTime } : {}),
       ...(modifiedTime ? { modifiedTime } : {}),
     },
@@ -43,6 +61,7 @@ export function createMetadata({
       card: "summary_large_image",
       title: fullTitle,
       description,
+      images: [ogImage.url],
     },
     robots: {
       index: true,

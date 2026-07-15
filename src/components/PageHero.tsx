@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export function PageHero({
   eyebrow,
@@ -13,9 +14,20 @@ export function PageHero({
 }) {
   return (
     <section className="border-b border-line bg-white">
+      {crumbs && (
+        <BreadcrumbJsonLd
+          items={crumbs.map((crumb) => ({
+            name: crumb.label,
+            href: crumb.href,
+          }))}
+        />
+      )}
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-14">
         {crumbs && (
-          <nav className="mb-5 flex flex-wrap items-center gap-2 text-xs text-slate-500">
+          <nav
+            aria-label="Breadcrumb"
+            className="mb-5 flex flex-wrap items-center gap-2 text-xs text-slate-500"
+          >
             <Link href="/" className="hover:text-ink">
               Home
             </Link>

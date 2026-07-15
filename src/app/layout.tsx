@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import { IBM_Plex_Sans, Space_Grotesk } from "next/font/google";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import { WebsiteJsonLd } from "@/components/JsonLd";
+import {
+  SoftwareApplicationJsonLd,
+  WebsiteJsonLd,
+} from "@/components/JsonLd";
 import { siteConfig } from "@/lib/site";
 import "./globals.css";
 
@@ -42,7 +45,7 @@ export const metadata: Metadata = {
       { url: "/favicon/favicon-32x32.png", sizes: "32x32", type: "image/png" },
       { url: "/favicon/favicon-16x16.png", sizes: "16x16", type: "image/png" },
       { url: "/favicon/favicon-96x96.png", sizes: "96x96", type: "image/png" },
-      { url: "/capcut-pro-mod-apk.webp", type: "image/webp" },
+      { url: siteConfig.ogImage, type: "image/webp" },
     ],
     apple: [{ url: "/favicon/apple-touch-icon.png", sizes: "180x180" }],
     shortcut: ["/favicon/favicon.ico"],
@@ -57,7 +60,7 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     images: [
       {
-        url: "/capcut-pro-mod-apk.webp",
+        url: siteConfig.ogImage,
         width: 512,
         height: 512,
         alt: "CapCut Pro Mod APK",
@@ -65,10 +68,10 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "CapCut Pro Mod APK v18.5.0 Free Download Official",
     description: siteConfig.description,
-    images: ["/capcut-pro-mod-apk.webp"],
+    images: [siteConfig.ogImage],
   },
   robots: {
     index: true,
@@ -98,6 +101,7 @@ export default function RootLayout({
     >
       <body className="flex min-h-full w-full max-w-[100vw] flex-col antialiased">
         <WebsiteJsonLd />
+        <SoftwareApplicationJsonLd />
         <Header />
         <main className="w-full min-w-0 flex-1">{children}</main>
         <Footer />
